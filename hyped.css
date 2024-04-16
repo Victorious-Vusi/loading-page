@@ -1,0 +1,149 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: blue;
+    font-family: cursive;
+    font-size: 40px;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to left bottom,#ff7e15e0,#158cffe0,#eef);
+    display: flex;
+    color: white;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: 400%;
+  /*  background-position: left;*/
+    animation: bg 5s linear alternate infinite;
+    font-size: 40px;
+    font-weight: 480;
+    
+}
+
+.text{
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+#text1{
+    display: block;
+    animation: text1 2s ease-in-out 2s forwards 1;
+    position: absolute;
+    visibility: visible;
+}
+
+#text2{
+    display: block;
+    animation: text2 2s ease-in-out 4s forwards 1;
+    position: absolute;
+    visibility: hidden;
+}
+#text3{
+    display: block;
+    animation: text3 2s ease-in-out 6s forwards 1;
+    position: absolute;
+    visibility: hidden;
+}
+
+#text4{
+    display: block;
+    animation: text4 2s ease-in-out 8s forwards 1;
+    position: absolute;
+    visibility: hidden;
+}
+img{
+    width: 24px;
+    height: 24px;
+}
+
+.gear{
+    animation: gear 8s ease-in-out  forwards 1;
+}
+
+@keyframes text1 {
+    0%{
+        display: block;
+    }
+    100%{
+        visibility: hidden;
+        color: rgba(233, 132, 23, 0);
+        color: transparent;
+    }
+}
+
+@keyframes text2 {
+    0%{
+        display: block;
+    }
+    100%{
+        visibility: visible;
+        color: rgba(233, 132, 23, 0);
+    }
+}
+
+@keyframes text3 {
+    0%{
+        display: block;
+    }
+    100%{
+        visibility: visible;
+        color: rgba(233, 132, 23, 0);
+    }
+}
+
+@keyframes text4{
+    0%{
+        display: block;
+    }
+    100%{
+        visibility: visible;
+        color: rgba(233, 132, 23, 0);
+    }
+}
+
+@keyframes bg{
+    50%{
+        background-position: left;
+        background-size: 100%;
+    }
+    100%{
+      background-position: right;
+    }
+}
+
+@keyframes gear{
+    0%{
+        transform: rotate(0deg);
+        transform-origin: center;
+    }
+    20%{
+      transform: rotate(45deg);
+      transform-origin: center;
+    }
+    40%{
+        transform: rotate(90deg);
+        transform-origin: center;
+    }
+    60%{
+      transform: rotate(180deg);
+      transform-origin: center;
+    }
+    80%{
+        transform: rotate(265deg);
+        transform-origin: center;
+    }
+    100%{
+      transform: rotate(360deg);
+      transform-origin: center;
+    }
+}
+/* 45 90 180 265 360 */
